@@ -9,13 +9,13 @@ We're looking forward to seeing how you complete the tasks.
 2. Follow the steps in [Setup](#setup) to get the application running on your machine
 3. Get familiar with the application code - [A tour of the application](#a-tour-of-the-application)
 4. Complete the [Tasks](#tasks)
-5. Submit your modified code as a zip file to daniel@getpylon.com
+5. Submit your modified code to us as a zip file
 6. We will get back to you with outcomes and feedback as soon as possible
 
 > **Before submission** please make sure you delete `backend/vendor` and `frontend/node_modules`.
 > We do not need those directories and they take up a lot of space, making submissions slower!
 
-If you have any issues during setup, please contact daniel@getpylon.com immediately! We know how many issues can arise when trying to get someone else's code running and don't want you getting stuck on it unnecessarily.
+If you have any issues during setup, please contact us immediately! We know how many issues can arise when trying to get someone else's code running and don't want you getting stuck on it unnecessarily.
 
 And please reach out to Daniel if any of the tasks are unclear or you need some assistance.
 
