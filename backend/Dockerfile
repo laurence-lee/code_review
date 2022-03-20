@@ -1,4 +1,4 @@
-FROM php:7.2
+FROM php:7.4
 
 RUN apt-get update -y && apt-get install \
     openssl \
@@ -7,10 +7,7 @@ RUN apt-get update -y && apt-get install \
     git \
     -y
 
-RUN docker-php-ext-install \
-    pcntl \
-    pdo_mysql \
-    zip
+RUN docker-php-ext-install pcntl
 
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
     && php composer-setup.php \
