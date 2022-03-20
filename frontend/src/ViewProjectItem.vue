@@ -25,6 +25,8 @@
 .view-project-item {
   padding: .75rem 1.25rem;
   padding-right: 0.75rem; /* account for map-link padding */
+  border: 1px solid #aaa;
+  border-radius: .25rem;
 }
 
 .view-project-item h2 {

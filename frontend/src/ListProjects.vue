@@ -31,9 +31,10 @@
 }
 
 .view-projects__placeholder {
-  background: grey;
   height: 5.125rem;
   margin: 1rem 0;
+  border: 1px solid #aaa;
+  border-radius: .25rem;
 
   /* See https://codepen.io/ErEllison/pen/ajVYqb */
   animation-duration: 1s;
