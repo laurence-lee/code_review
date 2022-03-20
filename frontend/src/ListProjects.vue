@@ -4,7 +4,7 @@
 
     <div v-if="projects !== null">
       <ul>
-        <li v-for="project, i in projects" :key="project.id">
+        <li v-for="(project, i) in projects" :key="project.id">
           <view-project-item :project="project" v-if="project.attributes" />
           <div v-else class="view-projects__placeholder" :style="{'animation-delay': i * 50 + 'ms'}" />
         </li>
