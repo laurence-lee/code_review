@@ -28,10 +28,10 @@
           </a>
 
           <div class="navbar-dropdown">
-            <a href="https://gitlab.com/pylon/coding-challenge/blob/master/readme.md" target="_blank" class="navbar-item">
+            <a href="https://gitlab.com/crabmusket/coding-challenge/blob/master/readme.md" target="_blank" class="navbar-item">
               Documentation
             </a>
-            <a href="https://gitlab.com/pylon/coding-challenge" target="_blank" class="navbar-item">
+            <a href="https://gitlab.com/crabmusket/coding-challenge" target="_blank" class="navbar-item">
               Get the code
             </a>
             <hr class="navbar-divider">
