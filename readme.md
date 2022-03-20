@@ -1,9 +1,41 @@
-# Pylon Interview Challenge
+# Pylon Technical Assessment
 
 **Welcome**
 
-Thank you for taking part in this coding exercise!
-We're looking forward to seeing how you complete the tasks.
+This is the sample application for the technical assessment stage of the Pylon interview process.
+
+Thank you for your interest in Pylon, and for your effort towards this assessment!
+We're looking forward to seeing how you fare.
+
+**Important notes**
+
+- If you have any issues during setup, please contact us immediately! We know how many issues can arise when trying to get someone else's code running and don't want you getting stuck on it unnecessarily.
+- Please reach out to Daniel if any of the tasks are unclear or you need some assistance.
+
+**Contents of this readme**
+
+- [The assessment process](#the-assessment-process)
+- [Setup](#setup)
+  - [Using Docker Compose](#using-docker-compose)
+  - [Without Docker](#without-docker)
+    - [Requirements](#requirements)
+    - [Running the backend](#running-the-backend)
+    - [Running the frontend](#running-the-frontend)
+- [A tour of the application](#a-tour-of-the-application)
+  - [Overview](#overview)
+  - [Backend](#backend)
+    - [Browsing the API](#browsing-the-api)
+    - [Routes](#routes)
+    - [Models and Resources](#models-and-resources)
+    - [Tests](#tests)
+  - [Frontend](#frontend)
+- [Tasks](#tasks)
+  - [1. Contacts update API (backend bug fix)](#1-contacts-update-api-backend-bug-fix)
+  - [2. Contacts list (frontend bug fix)](#2-contacts-list-frontend-bug-fix)
+  - [3. Bulk project delete API (new backend feature)](#3-bulk-project-delete-api-new-backend-feature)
+  - [4. Edit project page (new frontend feature)](#4-edit-project-page-new-frontend-feature)
+  - [5. Bonus challenge - contacts editor (new frontend feature)](#5-bonus-challenge---contacts-editor-new-frontend-feature)
+## The assessment process
 
 1. Clone this repository or download the source
 2. Follow the steps in [Setup](#setup) to get the application running on your machine
@@ -14,40 +46,6 @@ We're looking forward to seeing how you complete the tasks.
 
 > **Before submission** please make sure you delete `backend/vendor` and `frontend/node_modules`.
 > We do not need those directories and they take up a lot of space, making submissions slower!
-
-If you have any issues during setup, please contact us immediately! We know how many issues can arise when trying to get someone else's code running and don't want you getting stuck on it unnecessarily.
-
-And please reach out to Daniel if any of the tasks are unclear or you need some assistance.
-
-**Screenshot of the demo application**
-
-![screenshot of the application](./screenshot.png)
-
-**Contents of this readme**
-
-<!-- MDTOC maxdepth:6 firsth1:2 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
-
-- [Setup](#setup)   
-   - [Using Docker Compose](#using-docker-compose)   
-   - [Without Docker](#without-docker)   
-      - [Requirements](#requirements)   
-      - [Running the backend](#running-the-backend)   
-      - [Running the frontend](#running-the-frontend)   
-- [A tour of the application](#a-tour-of-the-application)   
-   - [Overview](#overview)   
-   - [Backend](#backend)   
-      - [Browsing the API](#browsing-the-api)   
-      - [Routes](#routes)   
-      - [Models and Resources](#models-and-resources)   
-      - [Tests](#tests)   
-   - [Frontend](#frontend)   
-- [Tasks](#tasks)   
-   - [1. Contacts update API (backend bug fix)](#1-contacts-update-api-backend-bug-fix)   
-   - [2. Contacts list (frontend bug fix)](#2-contacts-list-frontend-bug-fix)   
-   - [3. Bulk project delete API (new backend feature)](#3-bulk-project-delete-api-new-backend-feature)   
-   - [4. Edit project page (new frontend feature)](#4-edit-project-page-new-frontend-feature)   
-
-<!-- /MDTOC -->
 
 ## Setup
 
@@ -89,9 +87,9 @@ You can then view the frontend by visiting <http://localhost:11112>.
 
 #### Requirements
 
-- [Install PHP](https://www.php.net/manual/en/install.php) (at least 7.1)
-- [Install Composer](https://getcomposer.org/doc/00-intro.md)
-- [Install Node and NPM](https://nodejs.org/en/download/) (we recommend Node 12)
+- [Install PHP](https://www.php.net/manual/en/install.php) (at least 7.4)
+- [Install Composer](https://getcomposer.org/doc/00-intro.md) (you should be on Composer version 2)
+- [Install Node and NPM](https://nodejs.org/en/download/) (this sample is compatible with Node 12)
 
 #### Running the backend
 
@@ -133,6 +131,10 @@ The application as it stands can do a few things:
 - Delete a project
 
 The API is capable of more actions, but the frontend doesn't have everything implemented yet.
+
+**Screenshot of the demo application**
+
+![screenshot of the application](./screenshot.png)
 
 ### Backend
 
@@ -246,11 +248,11 @@ Hot reloading should work out of the box.
 
 ## Tasks
 
-We estimate these tasks should take **4-5 hours**.
+We estimate these tasks should take **3-4 hours**.
 Task 5 is significantly more complex than 4, so only attempt it if you have time left.
 
 We won't be evaluating you just on your completion rate; we'd like to see quality code and thoughtful comments.
-If you find yourself working beyond the 4 hour mark, feel free to just write down the way you would approach the tasks even if the code isn't written.
+If you find yourself working beyond the 3 hour mark, feel free to just write down the way you would approach the tasks even if the code isn't written.
 This might include method stubs, etc.
 
 The first two tasks (bug fixes) are intended to help you start finding your way around the codebase in a practical way.
