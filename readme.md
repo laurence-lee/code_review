@@ -272,6 +272,11 @@ Tips:
 
 This API is not used from the frontend until/unless you complete the extended Task 4, so you can proceed with frontend tasks first if you prefer!
 
+This task is assessing:
+
+- Your ability to navigate the codebase, from a request to the code that implements it
+- Basic understanding of PHP code and CRUD concepts in a web backend
+
 ### 2. Contacts list (frontend bug fix)
 
 - Currently, at <http://localhost:11112/contacts>, contacts "fill up" the table incrementally. We would prefer if they all appeared together
@@ -297,6 +302,12 @@ Note that this is an example of a "1+n" request pattern: 1 request to the list e
 This pattern _can_ be bad for performance, but it keeps the API simple and aids cacheability.
 Have a read of [this article](https://evertpot.com/h2-parallelism/) for more information.
 
+This task is assessing:
+
+- Your understanding of concurrency and asynchronocity in a frontend context
+- Your knowledge of JavaScript's Promise class
+- Your approach to fulfilling the requirements as written (there are multiple approaches that _can_ work!)
+
 ### 3. Bulk project delete API (new backend feature)
 
 - Implement an API that can "bulk delete" projects with a constant number of AJAX requests (not necessarily 1 request, but fewer than _n_ requests for _n_ projects!)
@@ -317,14 +328,32 @@ Our desired solution will:
 
 The `SolarProject` model uses [soft deletion](https://laravel.com/docs/6.x/eloquent#soft-deleting), so you don't need to worry about deleting related rows in other tables; the project will remain in the database with its `deleted_at` date set so it doesn't appear in ORM queries.
 
+This task is assessing:
+
+- How you prioritise competing requirements and your attention to detail
+- Your knowledge of database concepts like transactions
+- Your 'design aesthetic' or 'instinct' for API design, and how you communicate that
+
 ### 4. Edit project page (new frontend feature)
 
 - There is an 'edit project' link from the individual project page; implement the route and component that will allow the user to edit the project's properties
 - All the server API endpoints to update projects using PUT (whole resource) or PATCH (partial update) are already implemented
 - Note that the `system_size` field must be saved as a number or `null` (allowing the user to remove the size)
+- Handle loading states and error states in the UI as appropriate, but don't go overboard with the visual design
+
+This task is assessing:
+
+- Your ability to work with an existing API endpoint
+- Your general coding abilities, e.g. appropriate use of basic language features
+- Your attention to error handling and other basic frontend usability concerns
 
 ### 5. Bonus challenge - contacts editor (new frontend feature)
 
 - Implement contact editing on the project edit page (edit contact details, remove contact from project, add new contact)
 - This must be able to edit all contacts at the same time as the project details, and have a single 'save' button to perform all modifications to the objects
 - Don't implement a new 'bulk save' API on the server; use the existing API endpoints
+
+This task is assessing:
+
+- Your ability to manage more complex state in the frontend
+- Your ability to coordinate multiple update requests to the backend
