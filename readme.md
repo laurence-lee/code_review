@@ -65,6 +65,8 @@ In a terminal in this directory, bring up the docker compose services:
 docker-compose up -d
 ```
 
+**This may download up to 2GB of Docker images.**
+
 The first time you run this, both services will need to install dependencies.
 You can watch the logs of this happening with
 
